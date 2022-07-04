@@ -57,6 +57,10 @@
     background-image: url('/compound-components/assets/asset_DAI.svg');
   }
 
+  &--DPX {
+    background-image: url('/compound-components/assets/asset_DPX.svg');
+  }
+
   &--ETH,
   &--WETH {
     background-image: url('/compound-components/assets/asset_ETH.svg');
@@ -64,6 +68,10 @@
 
   &--LINK {
     background-image: url('/compound-components/assets/asset_LINK.svg');
+  }
+
+  &--MAGIC {
+    background-image: url('/compound-components/assets/asset_MAGIC.svg');
   }
 
   &--MKR {
@@ -113,14 +121,6 @@
 
   &--ZRX {
     background-image: url('/compound-components/assets/asset_ZRX.svg');
-  }
-
-  &--DPX {
-    background-image: url('/compound-components/assets/asset_BTC.svg');
-  }
-
-  &--MAGIC {
-    background-image: url('/compound-components/assets/asset_BTC.svg');
   }
 
   &--coinbase {

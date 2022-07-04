@@ -34,12 +34,28 @@
     background-image: url('/compound-components/assets/ctoken_dai_product.svg');
   }
 
+  &--cDPX {
+    background-image: url('/compound-components/assets/ctoken_dopex_product.svg');
+  }
+
+  &--lDPX {
+    background-image: url('/compound-components/assets/ctoken_dopex_product.svg');
+  }
+
   &--cETH {
     background-image: url('/compound-components/assets/ctoken_eth_product.svg');
   }
 
   &--cLINK {
     background-image: url('/compound-components/assets/ctoken_link_product.svg');
+  }
+
+  &--cMAGIC {
+    background-image: url('/compound-components/assets/ctoken_magic_product.svg');
+  }
+
+  &--lMAGIC {
+    background-image: url('/compound-components/assets/ctoken_magic_product.svg');
   }
 
   &--cMKR {
@@ -92,13 +108,5 @@
 
   &--cZRX {
     background-image: url('/compound-components/assets/ctoken_zrx_product.svg');
-  }
-
-  &--lDPX {
-    background-image: url('/compound-components/assets/ctoken_eth_product.svg');
-  }
-
-  &--lMAGIC {
-    background-image: url('/compound-components/assets/ctoken_eth_product.svg');
   }
 }
