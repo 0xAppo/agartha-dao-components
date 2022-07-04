@@ -62,7 +62,7 @@ function providerType(provider) {
 }
 
 function providerTypeId(provider) {
-  if (provider.isTally) {
+  if (provider && provider.isTally) {
     return 5;
   } else {
     return 3;
@@ -100,6 +100,9 @@ function networkFromId(id) {
 
     case 99:
       return 'core';
+
+    case 421611:
+      return 'arbitrumtest';
 
     case 999:
       return 'development';
