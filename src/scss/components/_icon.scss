@@ -57,6 +57,10 @@
     background-image: url('/compound-components/assets/asset_DAI.svg');
   }
 
+  &--DPX {
+    background-image: url('/compound-components/assets/asset_DPX.png');
+  }
+
   &--ETH,
   &--WETH {
     background-image: url('/compound-components/assets/asset_ETH.svg');
@@ -64,6 +68,14 @@
 
   &--LINK {
     background-image: url('/compound-components/assets/asset_LINK.svg');
+  }
+
+  &--MAGIC {
+    background-image: url('/compound-components/assets/asset_MAGIC.svg');
+  }
+
+  &--MIM {
+    background-image: url('/compound-components/assets/asset_MIM.png');
   }
 
   &--MKR {
@@ -76,6 +88,10 @@
 
   &--SAI {
     background-image: url('/compound-components/assets/asset_SAI.svg');
+  }
+
+  &--SPELL {
+    background-image: url('/compound-components/assets/asset_SPELL.png');
   }
 
   &--SUSHI {
