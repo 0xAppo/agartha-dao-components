@@ -14,6 +14,7 @@ type Network
     | Kovan
     | Sokol
     | Arbitrumtest
+    | Arbitrum
     | Core
     | Development
     | Unknown
@@ -52,6 +53,9 @@ networkFromId networkIdVal =
         421611 ->
             Arbitrumtest 
 
+        42161 ->
+            Arbitrum
+
         99 ->
             Core
 
@@ -89,6 +93,9 @@ networkFromName name =
         "arbitrumtest" ->
             Arbitrumtest   
 
+        "arbitrum" ->
+            Arbitrum
+
         _ ->
             MainNet
 
@@ -125,6 +132,9 @@ networkName network =
 
         Arbitrumtest ->
             "Arbitrumtest"
+
+        Arbitrum ->
+            "Arbitrum"
 
         Core ->
             "Core"
@@ -169,6 +179,9 @@ networkId network =
         Arbitrumtest ->
             421611    
 
+        Arbitrum ->
+            42161
+
         Core ->
             99
 
@@ -211,6 +224,9 @@ getEtherscanDomain network =
 
         Arbitrumtest ->
             Just "testnet.arbiscan.io"
+
+        Arbitrum ->
+            Just "arbiscan.io"
 
         Core ->
             Nothing
