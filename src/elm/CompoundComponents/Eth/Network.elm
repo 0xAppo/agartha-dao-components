@@ -27,7 +27,7 @@ networkFromId networkIdVal =
         0 ->
             Olympic
 
-        1 ->
+        42161 ->
             MainNet
 
         2 ->
@@ -54,7 +54,7 @@ networkFromId networkIdVal =
         421611 ->
             Arbitrumtest 
 
-        42161 ->
+        421612 ->
             Arbitrum
 
         421613 ->
@@ -163,7 +163,7 @@ networkId network =
             0
 
         MainNet ->
-            1
+            42161
 
         Morden ->
             2
@@ -193,7 +193,7 @@ networkId network =
             421613
 
         Arbitrum ->
-            42161
+            421612
 
         Core ->
             99
@@ -212,7 +212,7 @@ getEtherscanDomain network =
             Nothing
 
         MainNet ->
-            Just "etherscan.io"
+            Just "arbiscan.io"
 
         Morden ->
             Nothing
