@@ -15,6 +15,7 @@ type Network
     | Sokol
     | Arbitrumtest
     | Arbitrum
+    | Arbitrumgoerli
     | Core
     | Development
     | Unknown
@@ -56,6 +57,9 @@ networkFromId networkIdVal =
         42161 ->
             Arbitrum
 
+        421613 ->
+            Arbitrumgoerli
+
         99 ->
             Core
 
@@ -92,6 +96,9 @@ networkFromName name =
 
         "arbitrumtest" ->
             Arbitrumtest   
+
+        "arbitrumgoerli" ->
+            Arbitrumgoerli
 
         "arbitrum" ->
             Arbitrum
@@ -132,6 +139,9 @@ networkName network =
 
         Arbitrumtest ->
             "Arbitrumtest"
+
+        Arbitrumgoerli ->
+            "Arbitrumgoerli"
 
         Arbitrum ->
             "Arbitrum"
@@ -179,6 +189,9 @@ networkId network =
         Arbitrumtest ->
             421611    
 
+        Arbitrumgoerli ->
+            421613
+
         Arbitrum ->
             42161
 
@@ -224,6 +237,9 @@ getEtherscanDomain network =
 
         Arbitrumtest ->
             Just "testnet.arbiscan.io"
+
+        Arbitrumgoerli ->
+            Just "goerli-rollup-explorer.arbitrum.io"
 
         Arbitrum ->
             Just "arbiscan.io"
