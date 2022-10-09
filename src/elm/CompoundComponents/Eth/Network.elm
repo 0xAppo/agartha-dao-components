@@ -14,6 +14,8 @@ type Network
     | Kovan
     | Sokol
     | Arbitrumtest
+    | Arbitrum
+    | Arbitrumgoerli
     | Core
     | Development
     | Unknown
@@ -25,7 +27,7 @@ networkFromId networkIdVal =
         0 ->
             Olympic
 
-        1 ->
+        42161 ->
             MainNet
 
         2 ->
@@ -51,6 +53,12 @@ networkFromId networkIdVal =
 
         421611 ->
             Arbitrumtest 
+
+        421612 ->
+            Arbitrum
+
+        421613 ->
+            Arbitrumgoerli
 
         99 ->
             Core
@@ -89,6 +97,12 @@ networkFromName name =
         "arbitrumtest" ->
             Arbitrumtest   
 
+        "arbitrumgoerli" ->
+            Arbitrumgoerli
+
+        "arbitrum" ->
+            Arbitrum
+
         _ ->
             MainNet
 
@@ -126,6 +140,12 @@ networkName network =
         Arbitrumtest ->
             "Arbitrumtest"
 
+        Arbitrumgoerli ->
+            "Arbitrumgoerli"
+
+        Arbitrum ->
+            "Arbitrum"
+
         Core ->
             "Core"
 
@@ -143,7 +163,7 @@ networkId network =
             0
 
         MainNet ->
-            1
+            42161
 
         Morden ->
             2
@@ -169,6 +189,12 @@ networkId network =
         Arbitrumtest ->
             421611    
 
+        Arbitrumgoerli ->
+            421613
+
+        Arbitrum ->
+            421612
+
         Core ->
             99
 
@@ -186,7 +212,7 @@ getEtherscanDomain network =
             Nothing
 
         MainNet ->
-            Just "etherscan.io"
+            Just "arbiscan.io"
 
         Morden ->
             Nothing
@@ -211,6 +237,12 @@ getEtherscanDomain network =
 
         Arbitrumtest ->
             Just "testnet.arbiscan.io"
+
+        Arbitrumgoerli ->
+            Just "goerli-rollup-explorer.arbitrum.io"
+
+        Arbitrum ->
+            Just "arbiscan.io"
 
         Core ->
             Nothing
