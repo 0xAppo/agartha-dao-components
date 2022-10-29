@@ -27,7 +27,7 @@ networkFromId networkIdVal =
         0 ->
             Olympic
 
-        42161 ->
+        1 ->
             MainNet
 
         2 ->
@@ -163,7 +163,7 @@ networkId network =
             0
 
         MainNet ->
-            42161
+            1
 
         Morden ->
             2
