@@ -94,7 +94,7 @@ etherscanUrl network urlValue =
     in
     case network of
         MainNet ->
-            Just ("https://arbiscan.io/" ++ linkType ++ "/" ++ linkValue)
+            Just ("https://etherscan.io/" ++ linkType ++ "/" ++ linkValue)
 
         Rinkeby ->
             Just ("https://rinkeby.etherscan.io/" ++ linkType ++ "/" ++ linkValue)
@@ -107,6 +107,9 @@ etherscanUrl network urlValue =
 
         Goerli ->
             Just ("https://goerli.etherscan.io/" ++ linkType ++ "/" ++ linkValue)
+
+        Arbitrum ->
+            Just ("https://arbiscan.io/" ++ linkType ++ "/" ++ linkValue)
 
         Arbitrumtest ->
             Just ("https://testnet.arbiscan.io/" ++ linkType ++ "/" ++ linkValue)
