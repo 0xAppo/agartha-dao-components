@@ -28,7 +28,7 @@ async function connectWalletLink(eth, disallowAuthDialog = false) {
   const CHAIN_ID = 1;
 
   const walletLink = new WalletLink({
-    appName: 'Compound',
+    appName: 'Lodestar Finance',
     appLogoUrl: 'https://app.compound.finance/images/compound-192.png',
   });
 
