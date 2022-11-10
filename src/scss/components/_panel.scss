@@ -25,7 +25,7 @@
 }
 
 .panel {
-  background: #ffffff;
+  background: $color_dark_2;
   box-shadow: 0px 2px 4px rgba(16, 21, 24, 0.05);
   border-radius: 4px;
   margin-bottom: 1.33rem;
@@ -34,15 +34,15 @@
     background: $color_dark_2;
 
     .panel__header {
-      border-bottom: 1px solid $color_dark_1;
+      border-bottom: 1px solid $color_dark_2;
       h4 {
         color: #ffffff;
       }
     }
 
     .panel__labels {
-      background: $color_dark_2;
-      border-bottom: 1px solid $color_dark_1;
+      background: $color_light_2;
+      border-bottom: 1px solid $color_light_1;
     }
   }
 
